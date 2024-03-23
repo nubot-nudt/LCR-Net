@@ -1,8 +1,9 @@
 # Fast and Accurate Deep Loop Closing and Relocalization for Reliable LiDAR SLAM
 
-We propose LCR-Net to tackle both tasks effectively. It exploits novel feature extraction and a pose-aware attention mechanism to precisely estimate similarities and 6-DoF poses between pairs of LiDAR scans. 
+We propose LCR-Net to tackle both LiDAR-based loop closing and relocalization. 
+It exploits novel feature extraction and a pose-aware attention mechanism to precisely estimate similarities and 6-DoF poses between pairs of LiDAR scans. 
 
-LCR-Net has been into SLAM systems and achieves robust and accurate online LiDAR SLAM in outdoor driving environments. 
+LCR-Net has been integrated into SLAM systems and achieves robust and accurate online LiDAR SLAM in outdoor driving environments. 
 
 The code is coming soon!
 
