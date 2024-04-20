@@ -8,3 +8,12 @@ LCR-Net has been integrated into SLAM systems and achieves robust and accurate o
 The code is coming soon!
 
 This work has been accepted by IEEE Transactions on Robotics (TRO) :tada: [[pdf](https://arxiv.org/pdf/2309.08086.pdf)] [[video](tbd)].
+Please cite our work using:
+```bibtex
+@article{shi2024lcrnet,
+  author={Shi, Chenghao and Chen, Xieyuanli and Xiao, Junhao and Dai, Bin and Lu, Huimin},
+  journal={IEEE Transactions on Robotics (TRO)}, 
+  title={Fast and Accurate Deep Loop Closing and Relocalization for Reliable LiDAR SLAM}, 
+  year={2024},
+}
+```
