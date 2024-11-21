@@ -7,7 +7,9 @@ It exploits novel feature extraction and a 3D rotary attention mechanism to prec
 
 LCR-Net has been integrated into SLAM systems, serving both as a loop closing module and relocalization module. This integration ensures robust and accurate online LiDAR SLAM in outdoor driving environments. 
 
-<img src="./assets/demo.gif" alt="demo" style="zoom:150%;" />
+<p align="center">
+	<img src="./assets/demo.gif" width="120%">
+</p>
 
 ## Publication
 
