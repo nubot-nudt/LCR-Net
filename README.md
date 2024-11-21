@@ -7,9 +7,7 @@ It exploits novel feature extraction and a 3D rotary attention mechanism to prec
 
 LCR-Net has been integrated into SLAM systems, serving both as a loop closing module and relocalization module. This integration ensures robust and accurate online LiDAR SLAM in outdoor driving environments. 
 
-<p align="center">
-	<img src="./assets/demo.gif" width="120%">
-</p>
+<img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/demo.gif" alt="demo" style="zoom:150%;" />
 
 ## Publication
 
@@ -89,7 +87,7 @@ This script returns the dissimilarity between the two scans and calculates their
 
 Use `--vis=True` to enable visualization, and you will get the following in sequence:
 
-![Picture1](./assets/demo.png)
+![Picture1](https://github.com/nubot-nudt/LCR-Net/blob/main/assets/demo.png)
 
 Carefully examining figures b) and d), you can find that as long as there are geometrically salient object near the nodes, they are likely to be moved to the object, thereby enhancing the ability to recognize and match the same object as a whole.
 
@@ -194,7 +192,7 @@ All the results presented below are evaluated using the same model $LCR-Net$ tra
 | KITTI Seq.00           | 0.958 | 0.922 | 0.937    | 0.993     |
 | Oxford                 | 0.972 | 0.920 | 0.932    | 0.987     |
 
-<img src="./assets/kitti-pr.png" alt="kitti-pr" style="zoom:40%;" /><img src="./assets/oxford-pr.png" alt="oxford-pr" style="zoom:40%;" />
+<img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/kitti-pr.png" alt="kitti-pr" style="zoom:40%;" /><img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/oxford-pr.png" alt="oxford-pr" style="zoom:40%;" />
 
 ### Closed loop registration
 
