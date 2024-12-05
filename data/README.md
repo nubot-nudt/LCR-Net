@@ -1,6 +1,6 @@
 # Preparation before training and test
 
-This repo currently offers support for KITTI, KITTI360, Apollo, MulRan, and Oxford datasets for continuous registration testing; KITTI and KITTI360 for closed-loop registration testing; and KITTI and Oxford for loop detection testing.
+This repo currently offers support for KITTI, KITTI360, Apollo, MulRan, and Ford campus datasets for continuous registration testing; KITTI and KITTI360 for closed-loop registration testing; and KITTI and Ford campus for loop detection testing.
 
 Change output path `_C.output_root` to your preferred path. Logs, trained snapshots, processed features will be saved in this path.
 
@@ -71,7 +71,7 @@ TO BE RELEASED
 
 
 
-## Dataset (Oxford)
+## Dataset (Ford campus)
 
 TO BE RELEASED
 

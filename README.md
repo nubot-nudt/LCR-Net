@@ -97,7 +97,7 @@ We also provide a case for two scans (4481,958) that have no correlation. The ne
 
 ## Preparation before training and testing
 
-This repo currently offers support for KITTI, KITTI360, Apollo, MulRan, and Oxford datasets for continuous registration testing; KITTI and KITTI360 for closed-loop registration testing; and KITTI and Oxford for loop detection testing. Following [instructions]( data/README.md)  to prepare data and ground truth files.
+This repo currently offers support for KITTI, KITTI360, Apollo, MulRan, and Ford campus datasets for continuous registration testing; KITTI and KITTI360 for closed-loop registration testing; and KITTI and Ford campus for loop detection testing. Following [instructions]( data/README.md)  to prepare data and ground truth files.
 
 
 
@@ -133,7 +133,7 @@ python3 experiments/lcrnet/merge_model.py --model_reg=path/to/best-model-reg.tar
 python3 experiments/loop_detection/test_loop_detection.py --snapshot=./weights/best-model-mixed.tar --dataset=kitti
 ```
 
-This script generates and saves global descriptors.  Use `--dataset` to specify the dataset; currently, loop detection testing supports the KITTI and Oxford datasets. Use `--snapshot=./weights/best-model-reg.tar` to reproduce the results of $LCR-Net^\diamond$. 
+This script generates and saves global descriptors.  Use `--dataset` to specify the dataset; currently, loop detection testing supports the KITTI and Ford campus datasets. Use `--snapshot=./weights/best-model-reg.tar` to reproduce the results of $LCR-Net^\diamond$. 
 
 To evaluate the loop detection performance, run:
 
@@ -169,7 +169,7 @@ Use`--method=ransac` to specify RANSAC as the pose estimation algorithm.
 python3 experiments/registration/test_registration.py --snapshot=./weights/best-model-mixed.tar --dataset=kitti --reg_text_root=/icp10
 ```
 
-This script returns registration results and middle outputs. Use `--reg_text_root` to specify ground truth root, `--dataset` to select datasets. Currently, the loop closing test supports the KITTI, KITTI360, Apollo, Oxford, and Mulran datasets.
+This script returns registration results and middle outputs. Use `--reg_text_root` to specify ground truth root, `--dataset` to select datasets. Currently, the loop closing test supports the KITTI, KITTI360, Apollo, Ford campus, and Mulran datasets.
 
 Use `--snapshot=./weights/best-model-reg.tar` to reproduce the results of $LCR-Net^\diamond$. To evaluate the loop closing performance, run:
 
@@ -190,9 +190,9 @@ All the results presented below are evaluated using the same model $LCR-Net$ tra
 | Datasets (overlap>0.3) | AUC   | F1max | Recall@1 | Recall@1% |
 | ---------------------- | ----- | ----- | -------- | --------- |
 | KITTI Seq.00           | 0.958 | 0.922 | 0.937    | 0.993     |
-| Oxford                 | 0.972 | 0.920 | 0.932    | 0.987     |
+| Ford campus            | 0.972 | 0.920 | 0.932    | 0.987     |
 
-<img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/kitti-pr.png" alt="kitti-pr" style="zoom:40%;" /><img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/oxford-pr.png" alt="oxford-pr" style="zoom:40%;" />
+<img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/kitti-pr.png" alt="kitti-pr" style="zoom:40%;" /><img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/ford-pr.png" alt="ford-pr" style="zoom:40%;" />
 
 ### Closed loop registration
 
@@ -212,7 +212,7 @@ LCRNet is **the only method achieves a 100% registration recall on the test data
 | KITTI                   | 99.82 | 0.19   | 3.9     |
 | KITTI-360               | 99.94 | 0.24   | 5.8     |
 | Apollo                  | 100   | 0.09   | 3.4     |
-| oxford                  | 100   | 0.16   | 6.6     |
+| Ford campus             | 100   | 0.16   | 6.6     |
 | Mulran                  | 98.22 | 0.17   | 7.4     |
 
 
