@@ -192,7 +192,7 @@ All the results presented below are evaluated using the same model $LCR-Net$ tra
 | KITTI Seq.00           | 0.958 | 0.922 | 0.937    | 0.993     |
 | Ford campus            | 0.972 | 0.920 | 0.932    | 0.987     |
 
-<img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/kitti-pr.png" alt="kitti-pr" style="zoom:40%;" /><img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/ford-pr.png" alt="ford-pr" style="zoom:40%;" />
+<img src="https://github.com/nubot-nudt/LCR-Net/blob/main/assets/pr.png" alt="pr" />
 
 ### Closed loop registration
 
